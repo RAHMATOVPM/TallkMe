@@ -1,0 +1,4 @@
+Trigger Android build
+
+Этот файл создан ботом для запуска GitHub Actions workflow, которое собирает debug APK (Capacitor).
+Время запуска: 2026-08-07T07:30:00Z

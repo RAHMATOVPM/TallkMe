@@ -1,0 +1,1 @@
+ALTER TABLE public.messages REPLICA IDENTITY FULL;
