@@ -52,7 +52,7 @@ jobs:
         run: npx cap --version
 
       - name: Initialize Capacitor
-        run: npx cap init talkme com.talkme.app --web-dir=dist 2>/dev/null || echo "Capacitor already initialized"
+        run: npx cap init talkme com.talkme.app --web-dir=.output/public 2>/dev/null || echo "Capacitor already initialized"
 
       - name: Add Android platform
         run: npx cap add android 2>/dev/null || echo "Android platform already added"
