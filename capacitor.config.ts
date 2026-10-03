@@ -3,7 +3,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   appId: 'com.talkme.app',
   appName: 'TalkMe Chat',
-  webDir: 'dist',
+  webDir: '.output/public',
   server: {
     androidScheme: 'https',
     cleartext: false,
