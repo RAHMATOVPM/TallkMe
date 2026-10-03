@@ -42,11 +42,8 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
           cache: 'gradle'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Accept Android SDK licenses
-        run: yes | sdkmanager --licenses > /dev/null 2>&1 || true
+        run: yes | sudo sdkmanager --licenses > /dev/null 2>&1 || yes | sdkmanager --licenses > /dev/null 2>&1 || true
 
       - name: Install Capacitor CLI
         run: npm install -g @capacitor/cli
