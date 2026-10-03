@@ -44,9 +44,9 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
-        with:
-          api-level: ${{ env.ANDROID_API_LEVEL }}
-          build-tools: ${{ env.ANDROID_BUILD_TOOLS }}
+
+      - name: Accept Android SDK licenses
+        run: yes | sdkmanager --licenses > /dev/null 2>&1 || true
 
       - name: Install Capacitor CLI
         run: npm install -g @capacitor/cli
