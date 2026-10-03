@@ -35,6 +35,11 @@ jobs:
       - name: Build web app
         run: bun run build
 
+      - name: Create placeholder web assets
+        run: |
+          mkdir -p .output/public
+          [ -f .output/public/index.html ] || echo '<!doctype html><html><head><meta http-equiv="refresh" content="0;url=https://talkme-chat.lovable.app"></head><body></body></html>' > .output/public/index.html
+
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
