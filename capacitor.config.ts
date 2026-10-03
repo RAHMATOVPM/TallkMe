@@ -5,6 +5,8 @@ const config: CapacitorConfig = {
   appName: 'TalkMe Chat',
   webDir: '.output/public',
   server: {
+    // The app is server-rendered (no static index.html), so the APK loads the live site.
+    url: 'https://talkme-chat.lovable.app',
     androidScheme: 'https',
     cleartext: false,
   },
