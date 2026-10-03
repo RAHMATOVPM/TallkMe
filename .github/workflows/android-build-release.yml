@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NODE_VERSION: 20
-      JAVA_VERSION: 17
+      JAVA_VERSION: 21
       ANDROID_API_LEVEL: 34
       ANDROID_BUILD_TOOLS: 34.0.0
 
